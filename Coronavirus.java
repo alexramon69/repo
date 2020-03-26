@@ -42,24 +42,5 @@ public class Coronavirus {
         return "Coronavirus{" + "infeccio=" + infeccio + ", mortaldat=" + mortaldat + '}';
     }
 
-    class covid19 extends Coronavirus {
-
-        private int DiesQuarentena;
-
-       covid19() {
-            super();
-            DiesQuarentena = 0;
-        }
-
-        covid19(int x) {
-            super();
-            DiesQuarentena = x;
-        }
-
-        covid19(covid19 cv) {
-            super();
-            DiesQuarentena = cv.DiesQuarentena;
-        }
-    }
 
 }
