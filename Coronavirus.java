@@ -1,10 +1,26 @@
-public class Coronavirus{
- private float infeccio;
- private float mortaldat;
- Coronavirus(float x, float y) {
- infeccio= x;
- mortaldat= y;
- }
+
+public class Coronavirus {
+
+    private float infeccio;
+
+    private float mortaldat;
+    
+    
+    Coronavirus(){
+    infeccio = 0;
+    mortaldat = 0;    
+    }
+    
+    //contructor copiador
+    Coronavirus(Coronavirus c){
+    infeccio = c.infeccio;
+    mortaldat =c.mortaldat;    
+    }
+
+    Coronavirus(float x, float y) {
+        infeccio = x;
+        mortaldat = y;
+    }
 
     public float getInfeccio() {
         return infeccio;
@@ -26,5 +42,8 @@ public class Coronavirus{
     public String toString() {
         return "Coronavirus{" + "infeccio=" + infeccio + ", mortaldat=" + mortaldat + '}';
     }
- 
+
+    
+    
 }
+
