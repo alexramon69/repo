@@ -44,3 +44,25 @@ public class Coronavirus {
 
 
 }
+
+class covid19 extends Coronavirus{
+
+    private int diesquarentena;
+
+    //constructor buit
+    covid19(){
+        super();
+        diesquarentena = 0;
+    }
+
+    covid19(int x) {
+        super();
+        diesquarentena = x;
+    }
+
+    //costructor copiador
+    covid19(covid19 cv) {
+        super();
+        diesquarentena = cv.diesquarentena;
+    }
+}
