@@ -4,17 +4,16 @@ public class Coronavirus {
     private float infeccio;
 
     private float mortaldat;
-    
-    
-    Coronavirus(){
-    infeccio = 0;
-    mortaldat = 0;    
+
+    Coronavirus() {
+        infeccio = 0;
+        mortaldat = 0;
     }
-    
+
     //contructor copiador
-    Coronavirus(Coronavirus c){
-    infeccio = c.infeccio;
-    mortaldat =c.mortaldat;    
+    Coronavirus(Coronavirus c) {
+        infeccio = c.infeccio;
+        mortaldat = c.mortaldat;
     }
 
     Coronavirus(float x, float y) {
@@ -43,7 +42,24 @@ public class Coronavirus {
         return "Coronavirus{" + "infeccio=" + infeccio + ", mortaldat=" + mortaldat + '}';
     }
 
-    
-    
-}
+    class covid19 extends Coronavirus {
 
+        private int DiesQuarentena;
+
+       covid19() {
+            super();
+            DiesQuarentena = 0;
+        }
+
+        covid19(int x) {
+            super();
+            DiesQuarentena = x;
+        }
+
+        covid19(covid19 cv) {
+            super();
+            DiesQuarentena = cv.DiesQuarentena;
+        }
+    }
+
+}
